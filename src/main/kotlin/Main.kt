@@ -3,7 +3,6 @@ import java.io.BufferedWriter
 import java.net.Socket
 import kotlin.system.exitProcess
 
-
 fun serverRequest() {
     /**
      * Creates a socket, buffered reader and writer
