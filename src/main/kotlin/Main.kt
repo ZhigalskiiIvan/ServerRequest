@@ -3,7 +3,13 @@ import java.io.BufferedWriter
 import java.net.Socket
 import kotlin.system.exitProcess
 
+
 fun serverRequest() {
+    /**
+     * Creates a socket, buffered reader and writer
+     * and uses them to call functions of sending and receiving requests.
+     */
+
     val socket = Socket("npm.mipt.ru", 9048)
 
     val reader = socket.getInputStream().bufferedReader()
@@ -15,20 +21,32 @@ fun serverRequest() {
     val sum = returnRESBytesSum(reader)
     sendASum(writer, sum)
 
-    print("Answer:${reader.readText()}")
+    print("Answer: ${reader.readText()}")
 }
 
 fun sendASum(writer: BufferedWriter, sum: Int) {
-    writer.write("SUM${sum}\n")
+    /**
+     * Takes the sum and the buffered writer as input
+     * and sends a request to the server.
+     */
+    writer.write("SUM$sum\n")
     writer.flush()
 }
 
 fun sendAGreeting(writer: BufferedWriter) {
+    /**
+     * Sends HELLO to the server.
+     */
     writer.write("HELLO\n")
     writer.flush()
 }
 
 fun returnRESBytesSum(reader: BufferedReader): Int {
+    /**
+     * Looks for a phrase in the RES phrase, reads the required number
+     * of bytes and then reads the bytes themselves if message was received,
+     * call function which calculates its sum and returns it.
+     */
     val receivedBytes = reader.readText().toByteArray()
 
     var sizeByteIndex: Int? = null
@@ -57,6 +75,10 @@ fun returnRESBytesSum(reader: BufferedReader): Int {
 }
 
 fun calculateByteSum(byteArray: ByteArray): Int {
+    /**
+     * Calculates the bytes sum from the byteArray,
+     * considering them to be unsigned.
+     */
     var sum = 0
     for (byte in byteArray) sum += byte.toUByte().toInt()
     return sum
