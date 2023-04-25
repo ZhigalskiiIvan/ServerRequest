@@ -3,6 +3,7 @@ import java.io.BufferedWriter
 import java.net.Socket
 import kotlin.system.exitProcess
 
+
 fun serverRequest() {
     /**
      * Creates a socket, buffered reader and writer
@@ -14,12 +15,12 @@ fun serverRequest() {
     val reader = socket.getInputStream().bufferedReader()
     val writer = socket.getOutputStream().bufferedWriter()
 
-
     sendAGreeting(writer)
 
     val sum = returnRESBytesSum(reader)
     sendASum(writer, sum)
 
+    // no answer
     print("Answer: ${reader.readText()}")
 }
 
@@ -79,7 +80,7 @@ fun calculateByteSum(byteArray: ByteArray): Int {
      * considering them to be unsigned.
      */
     var sum = 0
-    for (byte in byteArray) sum += byte.toUByte().toInt()
+    byteArray.forEach { sum += it.toUByte().toInt() }
     return sum
 }
 

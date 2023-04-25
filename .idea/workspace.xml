@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47fb0779-6795-463b-993b-b2eb5e4ca546" name="Changes" comment="initial commit">
+    <list default="true" id="47fb0779-6795-463b-993b-b2eb5e4ca546" name="Changes" comment="Documentation has been added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -81,7 +81,7 @@
       <updated>1682093758187</updated>
       <workItem from="1682093760394" duration="229000" />
       <workItem from="1682094018536" duration="35491000" />
-      <workItem from="1682447537457" duration="2604000" />
+      <workItem from="1682447537457" duration="4299000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682178582281</created>
@@ -90,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682178582281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1682451447124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682451447124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Documentation has been added">
+      <created>1682451506173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682451506173</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Documentation has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation has been added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
