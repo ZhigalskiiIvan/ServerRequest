@@ -48,6 +48,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Ok9XOLWqb7BJ0SEmreKrGSvNIW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -83,7 +86,7 @@
       <workItem from="1682094018536" duration="35491000" />
       <workItem from="1682447537457" duration="4299000" />
       <workItem from="1682453102573" duration="58000" />
-      <workItem from="1682596609350" duration="2062000" />
+      <workItem from="1682596609350" duration="4371000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682178582281</created>
@@ -113,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682453132888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rewrite with forEach method">
+      <created>1682599135438</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682599135438</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
