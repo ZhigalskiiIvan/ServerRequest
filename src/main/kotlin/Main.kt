@@ -20,8 +20,10 @@ fun serverRequest() {
     val sum = returnRESBytesSum(reader)
     sendASum(writer, sum)
 
-    // no answer
+    // no answer???
     print("Answer: ${reader.readText()}")
+
+    socket.close()
 }
 
 fun sendASum(writer: BufferedWriter, sum: Int) {
@@ -29,14 +31,12 @@ fun sendASum(writer: BufferedWriter, sum: Int) {
      * Takes the sum and the buffered writer as input
      * and sends a request to the server.
      */
-    writer.write("SUM$sum\n")
+    writer.write("SUM${sum}\n")
     writer.flush()
 }
 
 fun sendAGreeting(writer: BufferedWriter) {
-    /**
-     * Sends HELLO to the server.
-     */
+    /** Sends HELLO to the server. */
     writer.write("HELLO\n")
     writer.flush()
 }
