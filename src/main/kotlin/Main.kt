@@ -25,6 +25,10 @@ fun serverRequest() {
     socket.close()
 }
 
+/**
+ * Reads the text from inputStream
+ * @param inputStream
+ */
 fun getAnswer(inputStream: InputStream): String = inputStream.bufferedReader().readText()
 
 /**
